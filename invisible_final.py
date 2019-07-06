@@ -3,13 +3,13 @@ import cv2
 import numpy as np
 import time
 
-
+#to start capturing using the webcam
 cap = cv2.VideoCapture(0)
 time.sleep(3)
 count = 0
 background = 0
 
-
+#to record the static background , at the starting of the video
 for i in range(60):
     ret,background = cap.read()
 
